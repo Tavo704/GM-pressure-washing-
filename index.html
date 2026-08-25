@@ -26,26 +26,39 @@ body {
   line-height: 1.6;
 }
 
+/* BRAND COLORS */
+:root {
+  --blue: #0877c9;
+  --dark-blue: #055a96;
+  --black: #111111;
+  --light-blue: #eaf5fc;
+  --white: #ffffff;
+}
+
+/* HEADER */
 header {
-  background: #111;
+  background: var(--black);
   color: white;
   text-align: center;
-  padding: 22px 20px;
+  padding: 25px 20px;
+  border-bottom: 5px solid var(--blue);
 }
 
 header h1 {
-  font-size: 38px;
+  font-size: 40px;
   letter-spacing: 1px;
 }
 
 header p {
   color: #d7d7d7;
-  font-size: 16px;
+  font-size: 17px;
 }
 
+/* HERO */
 .hero {
-  background: linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
-  url("https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=1600&q=80");
+  background:
+    linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
+    url("https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
   background-position: center;
   color: white;
@@ -75,23 +88,29 @@ header p {
 .button {
   display: inline-block;
   padding: 15px 25px;
-  background: white;
-  color: #111;
+  background: var(--blue);
+  color: white;
   text-decoration: none;
   border-radius: 7px;
   font-weight: bold;
   font-size: 17px;
-}
-
-.button.dark {
-  background: #111;
-  color: white;
+  transition: .2s;
 }
 
 .button:hover {
+  background: var(--dark-blue);
   transform: translateY(-2px);
 }
 
+.button.black {
+  background: var(--black);
+}
+
+.button.black:hover {
+  background: #333;
+}
+
+/* GENERAL SECTIONS */
 section {
   padding: 70px 20px;
   max-width: 1100px;
@@ -111,49 +130,8 @@ section h2 {
   color: #555;
 }
 
-.services {.work {
-  background: #f5f7fa;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 35px;
-}
-
-.work-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,.08);
-}
-
-.photo-placeholder {
-  height: 220px;
-  background: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.work-card h3 {
-  font-size: 21px;
-  margin: 20px 20px 8px;
-}
-
-.work-photo {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin: 0;
-}
-}
+/* SERVICES */
+.services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
@@ -163,6 +141,7 @@ section h2 {
   background: white;
   padding: 30px 25px;
   border-radius: 12px;
+  border-top: 4px solid var(--blue);
   box-shadow: 0 5px 20px rgba(0,0,0,.08);
 }
 
@@ -180,6 +159,46 @@ section h2 {
   color: #555;
 }
 
+/* RECENT WORK */
+.work {
+  background: var(--light-blue);
+  max-width: none;
+}
+
+.gallery {
+  max-width: 1100px;
+  margin: 35px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.work-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,.10);
+}
+
+.work-photo {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.work-card h3 {
+  font-size: 21px;
+  margin: 20px 20px 8px;
+  color: var(--black);
+}
+
+.work-card p {
+  color: #555;
+  margin: 0 20px 25px;
+}
+
+/* WHY CHOOSE US */
 .why {
   background: white;
   max-width: none;
@@ -199,7 +218,8 @@ section h2 {
 
 .reason {
   padding: 25px;
-  border: 1px solid #e2e2e2;
+  border-left: 4px solid var(--blue);
+  background: #f8f8f8;
   border-radius: 10px;
 }
 
@@ -207,11 +227,13 @@ section h2 {
   margin-bottom: 8px;
 }
 
+/* SERVICE AREA */
 .area {
-  background: #111;
+  background: var(--black);
   color: white;
   max-width: none;
   text-align: center;
+  border-top: 5px solid var(--blue);
 }
 
 .area p {
@@ -220,9 +242,10 @@ section h2 {
   color: #ddd;
 }
 
+/* QUOTE */
 .quote {
   text-align: center;
-  background: #f5f7fa;
+  background: var(--light-blue);
 }
 
 .quote p {
@@ -230,11 +253,17 @@ section h2 {
   margin: 15px auto 25px;
 }
 
+/* FOOTER */
 footer {
-  background: #0b0b0b;
+  background: var(--black);
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 35px 20px;
+}
+
+footer h3 {
+  color: var(--blue);
+  font-size: 24px;
 }
 
 footer p {
@@ -242,6 +271,7 @@ footer p {
   margin-top: 5px;
 }
 
+/* MOBILE */
 @media (max-width: 600px) {
 
   header h1 {
@@ -272,6 +302,10 @@ footer p {
     width: 100%;
     max-width: 300px;
   }
+
+  .work-photo {
+    height: 190px;
+  }
 }
 </style>
 </head>
@@ -294,7 +328,7 @@ footer p {
 
   <div class="buttons">
     <a class="button" href="tel:7042734221">📞 Call for a Free Quote</a>
-    <a class="button dark" href="sms:7042734221">💬 Text for a Free Quote</a>
+    <a class="button black" href="sms:7042734221">💬 Text for a Free Quote</a>
   </div>
 
 </div>
@@ -353,8 +387,7 @@ footer p {
 
 </section>
 
-
-    <section class="work">
+<section class="work">
 
   <h2>Our Recent Work</h2>
 
@@ -365,50 +398,52 @@ footer p {
   <div class="gallery">
 
     <div class="work-card">
-      <img class="work-photo" src="IMG_3254.jpeg" alt="G&M Pressure Washing project">
+      <img class="work-photo" src="IMG_3254.jpeg" alt="G&M Pressure Washing house washing project">
       <h3>House Washing</h3>
       <p>Professional exterior cleaning to bring this home back to life.</p>
     </div>
 
     <div class="work-card">
-      <img class="work-photo" src="3326.jpeg" alt="G&M Pressure Washing project">
+      <img class="work-photo" src="3326.jpeg" alt="G&M Pressure Washing driveway cleaning project">
       <h3>Driveway Cleaning</h3>
       <p>Deep cleaning to remove dirt, stains and organic buildup.</p>
     </div>
 
     <div class="work-card">
-      <img class="work-photo" src="3340.jpeg" alt="G&M Pressure Washing project">
+      <img class="work-photo" src="3340.jpeg" alt="G&M Pressure Washing deck and patio project">
       <h3>Deck & Patio Cleaning</h3>
       <p>Refreshing outdoor surfaces and restoring their appearance.</p>
-    </div><div class="work-card">
-  <img class="work-photo" src="3481.jpeg" alt="G&M Pressure Washing project">
-  <h3>Exterior Cleaning</h3>
-  <p>Professional exterior cleaning for a cleaner, brighter property.</p>
-</div>
+    </div>
 
-<div class="work-card">
-  <img class="work-photo" src="3505.jpeg" alt="G&M Pressure Washing project">
-  <h3>Concrete Cleaning</h3>
-  <p>Removing dirt and buildup to refresh outdoor surfaces.</p>
-</div>
+    <div class="work-card">
+      <img class="work-photo" src="3481.jpeg" alt="G&M Pressure Washing exterior cleaning project">
+      <h3>Exterior Cleaning</h3>
+      <p>Professional exterior cleaning for a cleaner, brighter property.</p>
+    </div>
 
-<div class="work-card">
-  <img class="work-photo" src="3542.jpeg" alt="G&M Pressure Washing project">
-  <h3>Pressure Washing</h3>
-  <p>Professional cleaning completed by G&M Pressure Washing.</p>
-</div>
+    <div class="work-card">
+      <img class="work-photo" src="3505.jpeg" alt="G&M Pressure Washing concrete cleaning project">
+      <h3>Concrete Cleaning</h3>
+      <p>Removing dirt and buildup to refresh outdoor surfaces.</p>
+    </div>
 
-<div class="work-card">
-  <img class="work-photo" src="3592.jpeg" alt="G&M Pressure Washing project">
-  <h3>Recent Project</h3>
-  <p>Another property cleaned by G&M Pressure Washing.</p>
-</div>
+    <div class="work-card">
+      <img class="work-photo" src="3542.jpeg" alt="G&M Pressure Washing project">
+      <h3>Pressure Washing</h3>
+      <p>Professional cleaning completed by G&M Pressure Washing.</p>
+    </div>
+
+    <div class="work-card">
+      <img class="work-photo" src="3592.jpeg" alt="G&M Pressure Washing recent project">
+      <h3>Recent Project</h3>
+      <p>Another property cleaned by G&M Pressure Washing.</p>
+    </div>
 
   </div>
 
 </section>
-  
-  <section class="why">
+
+<section class="why">
 
   <div class="why-content">
 
@@ -474,11 +509,11 @@ footer p {
 
   <div class="buttons">
 
-    <a class="button dark" href="tel:7042734221">
+    <a class="button" href="tel:7042734221">
       📞 704-273-4221
     </a>
 
-    <a class="button dark" href="sms:7042734221">
+    <a class="button black" href="sms:7042734221">
       💬 Text Us
     </a>
 
