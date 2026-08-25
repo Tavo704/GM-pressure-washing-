@@ -3,30 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>G&M Pressure Washing | Kannapolis NC</title>
-
 <meta name="description" content="G&M Pressure Washing provides professional house washing, driveway cleaning, concrete cleaning, decks, patios and soft washing in Kannapolis, Concord and surrounding areas.">
-
 <style>
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #17202a;
-  background: #f5f7fa;
-  line-height: 1.6;
-}
-
-/* BRAND COLORS */
 :root {
   --blue: #0877c9;
   --dark-blue: #055a96;
@@ -34,7 +21,12 @@ body {
   --light-blue: #eaf5fc;
   --white: #ffffff;
 }
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17202a;
+  background: #f5f7fa;
+  line-height: 1.6;
+}
 /* HEADER */
 header {
   background: var(--black);
@@ -43,17 +35,17 @@ header {
   padding: 25px 20px;
   border-bottom: 5px solid var(--blue);
 }
-
-header h1 {
-  font-size: 40px;
-  letter-spacing: 1px;
+.logo {
+  width: 220px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
 }
-
 header p {
   color: #d7d7d7;
   font-size: 17px;
 }
-
 /* HERO */
 .hero {
   background:
@@ -65,26 +57,22 @@ header p {
   text-align: center;
   padding: 110px 20px;
 }
-
 .hero h2 {
   font-size: 52px;
   line-height: 1.15;
   margin-bottom: 20px;
 }
-
 .hero p {
   max-width: 750px;
   margin: 0 auto 30px;
   font-size: 20px;
 }
-
 .buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
 }
-
 .button {
   display: inline-block;
   padding: 15px 25px;
@@ -96,47 +84,39 @@ header p {
   font-size: 17px;
   transition: .2s;
 }
-
 .button:hover {
   background: var(--dark-blue);
   transform: translateY(-2px);
 }
-
 .button.black {
   background: var(--black);
 }
-
 .button.black:hover {
   background: #333;
 }
-
 /* GENERAL SECTIONS */
 section {
   padding: 70px 20px;
   max-width: 1100px;
   margin: auto;
 }
-
 section h2 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 12px;
 }
-
 .section-intro {
   text-align: center;
   max-width: 700px;
   margin: 0 auto 40px;
   color: #555;
 }
-
 /* SERVICES */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
 }
-
 .card {
   background: white;
   padding: 30px 25px;
@@ -144,27 +124,22 @@ section h2 {
   border-top: 4px solid var(--blue);
   box-shadow: 0 5px 20px rgba(0,0,0,.08);
 }
-
 .card-icon {
   font-size: 38px;
   margin-bottom: 12px;
 }
-
 .card h3 {
   font-size: 21px;
   margin-bottom: 10px;
 }
-
 .card p {
   color: #555;
 }
-
 /* RECENT WORK */
 .work {
   background: var(--light-blue);
   max-width: none;
 }
-
 .gallery {
   max-width: 1100px;
   margin: 35px auto 0;
@@ -172,61 +147,97 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
-
 .work-card {
   background: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0,0,0,.10);
 }
-
 .work-photo {
   display: block;
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-
 .work-card h3 {
   font-size: 21px;
   margin: 20px 20px 8px;
   color: var(--black);
 }
-
 .work-card p {
   color: #555;
   margin: 0 20px 25px;
 }
-
+/* REVIEWS */
+.reviews {
+  background: white;
+  max-width: none;
+}
+.google-rating {
+  text-align: center;
+  margin: 10px auto 25px;
+}
+.google-rating strong {
+  display: block;
+  color: var(--blue);
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+.google-rating span {
+  display: block;
+  color: #666;
+  font-size: 15px;
+  margin-top: 4px;
+}
+.review-grid {
+  max-width: 1100px;
+  margin: 35px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+.review-card {
+  background: #f5f7fa;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 4px 15px rgba(0,0,0,.05);
+}
+.stars {
+  color: var(--blue);
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.review-card p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.7;
+}
 /* WHY CHOOSE US */
 .why {
   background: white;
   max-width: none;
 }
-
 .why-content {
   max-width: 1100px;
   margin: auto;
 }
-
 .reasons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-top: 35px;
 }
-
 .reason {
   padding: 25px;
   border-left: 4px solid var(--blue);
   background: #f8f8f8;
   border-radius: 10px;
 }
-
 .reason h3 {
   margin-bottom: 8px;
 }
-
 /* SERVICE AREA */
 .area {
   background: var(--black);
@@ -235,24 +246,20 @@ section h2 {
   text-align: center;
   border-top: 5px solid var(--blue);
 }
-
 .area p {
   font-size: 19px;
   margin-top: 15px;
   color: #ddd;
 }
-
 /* QUOTE */
 .quote {
   text-align: center;
   background: var(--light-blue);
 }
-
 .quote p {
   font-size: 20px;
   margin: 15px auto 25px;
 }
-
 /* FOOTER */
 footer {
   background: var(--black);
@@ -260,94 +267,78 @@ footer {
   text-align: center;
   padding: 35px 20px;
 }
-
 footer h3 {
   color: var(--blue);
   font-size: 24px;
 }
-
 footer p {
   color: #aaa;
   margin-top: 5px;
 }
-
 /* MOBILE */
 @media (max-width: 600px) {
-
   .logo {
-  width: 220px;
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
+    width: 190px;
   }
-
   .hero {
     padding: 85px 18px;
   }
-
   .hero h2 {
     font-size: 36px;
   }
-
   .hero p {
     font-size: 18px;
   }
-
   section {
     padding: 55px 18px;
   }
-
   section h2 {
     font-size: 30px;
   }
-
   .button {
     width: 100%;
     max-width: 300px;
   }
-
   .work-photo {
     height: 190px;
   }
 }
 </style>
 </head>
-
 <body>
-
+<!-- HEADER -->
 <header>
-  <img class="logo" src="9CD8A93F-6B86-405D-8A12-CF2C545473A6.png" alt="G&M Pressure Washing Logo">
+  <img
+    class="logo"
+    src="9CD8A93F-6B86-405D-8A12-CF2C545473A6.png"
+    alt="G&M Pressure Washing Logo"
+  >
   <p>Professional Exterior Cleaning</p>
 </header>
-
+<!-- HERO -->
 <div class="hero">
-
   <h2>Bring Your Property Back to Life</h2>
-
   <p>
     Professional pressure washing and exterior cleaning for homes and businesses
     in Kannapolis, Concord, Charlotte and surrounding areas.
   </p>
-
   <div class="buttons">
-    <a class="button" href="tel:7042734221">📞 Call for a Free Quote</a>
-    <a class="button black" href="sms:7042734221">💬 Text for a Free Quote</a>
+    <a class="button" href="tel:7042734221">
+      📞 Call for a Free Quote
+    </a>
+    <a class="button black" href="sms:7042734221">
+      💬 Text for a Free Quote
+    </a>
   </div>
-
 </div>
-
+<!-- SERVICES -->
 <section>
-
   <h2>Our Services</h2>
-
   <p class="section-intro">
-    Reliable exterior cleaning to make your property look cleaner, brighter and better maintained.
+    Reliable exterior cleaning to make your property look cleaner,
+    brighter and better maintained.
   </p>
-
   <div class="services">
-
     <div class="card">
       <div class="card-icon">🏠</div>
       <h3>House Washing</h3>
@@ -355,7 +346,6 @@ footer p {
         Safely remove dirt, algae, mold and buildup from your home's exterior.
       </p>
     </div>
-
     <div class="card">
       <div class="card-icon">🚗</div>
       <h3>Driveways & Concrete</h3>
@@ -363,7 +353,6 @@ footer p {
         Restore the appearance of driveways, sidewalks, walkways and concrete surfaces.
       </p>
     </div>
-
     <div class="card">
       <div class="card-icon">🌿</div>
       <h3>Patios & Decks</h3>
@@ -371,7 +360,6 @@ footer p {
         Refresh outdoor living areas and remove dirt, grime and organic buildup.
       </p>
     </div>
-
     <div class="card">
       <div class="card-icon">💦</div>
       <h3>Soft Washing</h3>
@@ -379,7 +367,6 @@ footer p {
         Low-pressure exterior cleaning for surfaces that require a gentler approach.
       </p>
     </div>
-
     <div class="card">
       <div class="card-icon">🏢</div>
       <h3>Commercial Cleaning</h3>
@@ -387,158 +374,221 @@ footer p {
         Professional exterior cleaning for businesses and commercial properties.
       </p>
     </div>
-
   </div>
-
 </section>
-
+<!-- RECENT WORK -->
 <section class="work">
-
   <h2>Our Recent Work</h2>
-
   <p class="section-intro">
-    Take a look at some of the exterior cleaning projects completed by G&M Pressure Washing.
+    Take a look at some of the exterior cleaning projects completed by
+    G&M Pressure Washing.
   </p>
-
   <div class="gallery">
-
-  <div class="work-card">
-    <img class="work-photo" src="IMG_3254.jpeg" alt="G&M Pressure Washing deck cleaning">
-    <h3>Deck Cleaning</h3>
-    <p>Professional cleaning to refresh and restore outdoor living spaces.</p>
+    <div class="work-card">
+      <img
+        class="work-photo"
+        src="IMG_3254.jpeg"
+        alt="G&M Pressure Washing deck cleaning"
+      >
+      <h3>Deck Cleaning</h3>
+      <p>
+        Professional cleaning to refresh and restore outdoor living spaces.
+      </p>
+    </div>
+    <div class="work-card">
+      <img
+        class="work-photo"
+        src="IMG_3326.jpeg"
+        alt="House washing before cleaning"
+      >
+      <h3>House Washing — Before</h3>
+      <p>
+        Exterior before professional cleaning by G&M Pressure Washing.
+      </p>
+    </div>
+    <div class="work-card">
+      <img
+        class="work-photo"
+        src="IMG_3340.jpeg"
+        alt="House washing after cleaning"
+      >
+      <h3>House Washing — After</h3>
+      <p>
+        A cleaner, brighter exterior after professional cleaning.
+      </p>
+    </div>
+    <div class="work-card">
+      <img
+        class="work-photo"
+        src="IMG_3481.jpeg"
+        alt="Driveway cleaning before"
+      >
+      <h3>Driveway — Before</h3>
+      <p>
+        Concrete surface before professional pressure washing.
+      </p>
+    </div>
+    <div class="work-card">
+      <img
+        class="work-photo"
+        src="IMG_3505.jpeg"
+        alt="Driveway cleaning after"
+      >
+      <h3>Driveway — After</h3>
+      <p>
+        Freshly cleaned concrete with dirt and buildup removed.
+      </p>
+    </div>
+    <div class="work-card">
+      <img
+        class="work-photo"
+        src="IMG_3242.jpeg"
+        alt="Patio pavers before cleaning"
+      >
+      <h3>Patio Pavers — Before</h3>
+      <p>
+        Patio pavers before professional cleaning by G&M Pressure Washing.
+      </p>
+    </div>
+    <div class="work-card">
+      <img
+        class="work-photo"
+        src="IMG_3248.jpeg"
+        alt="Patio pavers after cleaning"
+      >
+      <h3>Patio Pavers — After</h3>
+      <p>
+        Freshly cleaned patio pavers with dirt and buildup removed.
+      </p>
+    </div>
   </div>
-
-  <div class="work-card">
-    <img class="work-photo" src="IMG_3326.jpeg" alt="House washing before cleaning">
-    <h3>House Washing — Before</h3>
-    <p>Exterior before professional cleaning by G&M Pressure Washing.</p>
-  </div>
-
-  <div class="work-card">
-    <img class="work-photo" src="IMG_3340.jpeg" alt="House washing after cleaning">
-    <h3>House Washing — After</h3>
-    <p>A cleaner, brighter exterior after professional cleaning.</p>
-  </div>
-
-  <div class="work-card">
-    <img class="work-photo" src="IMG_3481.jpeg" alt="Driveway cleaning before">
-    <h3>Driveway — Before</h3>
-    <p>Concrete surface before professional pressure washing.</p>
-  </div>
-
-  <div class="work-card">
-    <img class="work-photo" src="IMG_3505.jpeg" alt="Driveway cleaning after">
-    <h3>Driveway — After</h3>
-    <p>Freshly cleaned concrete with dirt and buildup removed.</p>
-  </div>
-
-  <div class="work-card">
-  <img class="work-photo" src="IMG_3242.jpeg" alt="Patio pavers before cleaning">
-  <h3>Patio Pavers — Before</h3>
-  <p>Patio pavers before professional cleaning by G&M Pressure Washing.</p>
-</div>
-
-<div class="work-card">
-  <img class="work-photo" src="IMG_3248.jpeg" alt="Patio pavers after cleaning">
-  <h3>Patio Pavers — After</h3>
-  <p>Freshly cleaned patio pavers with dirt and buildup removed.</p>
-</div>
-
-</div>
-
-  </div>
-
 </section>
-
+<!-- REVIEWS -->
+<section class="reviews">
+  <h2>What Our Customers Say</h2>
+  <div class="google-rating">
+    <strong>5.0 ★★★★★</strong>
+    <span>Google Customer Rating</span>
+  </div>
+  <p class="section-intro">
+    We're proud to provide reliable service and quality results for our local customers.
+  </p>
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Amazing work! My driveway looks so good now.
+        The final touch my home needed."
+      </p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Good service, they are nice people. I'm super satisfied
+        with their work. I really recommend them!"
+      </p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Great work! Efficient and fast."
+      </p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Very satisfied with their work. Very friendly and respectful
+        of the property, and the price is right."
+      </p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "G&M did an excellent job! House looks brand new with all
+        the detail and quality work performed. Punctual and professional.
+        Highly recommend!"
+      </p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "He was punctual and the work he did was amazing.
+        Now my house looks great again. I highly recommend him."
+      </p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        "I found him on Facebook and gave him a shot. He responded
+        right away with a very affordable quote and put me on his
+        schedule right away. He did an excellent job."
+      </p>
+    </div>
+  </div>
+</section>
+<!-- WHY CHOOSE G&M -->
 <section class="why">
-
   <div class="why-content">
-
     <h2>Why Choose G&M?</h2>
-
     <p class="section-intro">
       We take pride in giving every property the attention it deserves.
     </p>
-
     <div class="reasons">
-
       <div class="reason">
         <h3>✓ Professional Service</h3>
         <p>
           We treat your property with care and focus on quality results.
         </p>
       </div>
-
       <div class="reason">
         <h3>✓ Quality Cleaning</h3>
         <p>
           We use the right cleaning method for each surface.
         </p>
       </div>
-
       <div class="reason">
         <h3>✓ Free Quotes</h3>
         <p>
           Contact us to discuss your property and receive a free quote.
         </p>
       </div>
-
       <div class="reason">
         <h3>✓ Local Service</h3>
         <p>
           Proudly serving homeowners and businesses in our local communities.
         </p>
       </div>
-
     </div>
-
   </div>
-
 </section>
-
+<!-- SERVICE AREA -->
 <section class="area">
-
   <h2>Serving Our Local Area</h2>
-
   <p>
     Kannapolis • Concord • Charlotte • Salisbury • China Grove • Harrisburg
   </p>
-
 </section>
-
+<!-- FINAL QUOTE -->
 <section class="quote">
-
   <h2>Ready to Make Your Property Shine?</h2>
-
   <p>
     Get in touch with G&M Pressure Washing today for your free quote.
   </p>
-
   <div class="buttons">
-
     <a class="button" href="tel:7042734221">
       📞 704-273-4221
     </a>
-
     <a class="button black" href="sms:7042734221">
       💬 Text Us
     </a>
-
   </div>
-
 </section>
-
+<!-- FOOTER -->
 <footer>
-
   <h3>G&M Pressure Washing</h3>
-
   <p>Professional Exterior Cleaning</p>
-
   <p>Serving Kannapolis & Surrounding Areas</p>
-
   <p>© 2026 G&M Pressure Washing</p>
-
 </footer>
-
 </body>
 </html>
