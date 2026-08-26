@@ -61,6 +61,13 @@ header p {
   font-size: 52px;
   line-height: 1.15;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,.7);
+}
+
+.hero h2::first-line {
+  color: white;
+}
+}
 }
 .hero p {
   max-width: 750px;
@@ -75,14 +82,17 @@ header p {
 }
 .button {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 16px 28px;
   background: var(--blue);
   color: white;
   text-decoration: none;
-  border-radius: 7px;
+  border-radius: 8px;
   font-weight: bold;
   font-size: 17px;
+  letter-spacing: .3px;
   transition: .2s;
+  box-shadow: 0 5px 15px rgba(0,0,0,.25);
+}
 }
 .button:hover {
   background: var(--dark-blue);
@@ -317,17 +327,19 @@ footer p {
 </header>
 <!-- HERO -->
 <div class="hero">
-  <h2>Bring Your Property Back to Life</h2>
+  <h2>Professional Pressure Washing You Can Trust</h2>
   <p>
-    Professional pressure washing and exterior cleaning for homes and businesses
-    in Kannapolis, Concord, Charlotte and surrounding areas.
+    <p>
+  Reliable pressure washing and exterior cleaning that makes your home
+  look cleaner, brighter and better maintained.
+</p>
   </p>
   <div class="buttons">
     <a class="button" href="tel:7042734221">
-      📞 Call for a Free Quote
+      📞 GET YOUR FREE QUOTE
     </a>
     <a class="button black" href="sms:7042734221">
-      💬 Text for a Free Quote
+      💬 TEXT US FOR A FREE QUOTE
     </a>
   </div>
 </div>
