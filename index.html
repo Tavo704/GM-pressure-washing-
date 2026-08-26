@@ -73,6 +73,11 @@ header p {
   margin: 0 auto 30px;
   font-size: 20px;
 }
+  .hero-contact {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 18px;
+}
 .buttons {
   display: flex;
   justify-content: center;
@@ -81,7 +86,7 @@ header p {
 }
 .button {
   display: inline-block;
-  padding: 16px 28px;
+  padding: 17px 30px;
   background: var(--blue);
   color: white;
   text-decoration: none;
@@ -130,16 +135,26 @@ section h2 {
   background: white;
   padding: 30px 25px;
   border-radius: 12px;
-  border-top: 4px solid var(--blue);
-  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+  border-top: 5px solid var(--blue);
+  box-shadow: 0 8px 25px rgba(0,0,0,.10);
+  transition: transform .2s, box-shadow .2s;
+}
+  .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
 }
 .card-icon {
-  font-size: 38px;
-  margin-bottom: 12px;
+  font-size: 40px;
+  margin-bottom: 14px;
+  filter: saturate(1.2);
+}
 }
 .card h3 {
-  font-size: 21px;
+  font-size: 22px;
   margin-bottom: 10px;
+  color: var(--black);
+}
 }
 .card p {
   color: #555;
@@ -158,20 +173,28 @@ section h2 {
 }
 .work-card {
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,.10);
+  box-shadow: 0 8px 25px rgba(0,0,0,.12);
+  transition: transform .2s, box-shadow .2s;
+}
+  .work-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.16);
+}
 }
 .work-photo {
   display: block;
   width: 100%;
-  height: 200px;
+  height: 230px;
   object-fit: cover;
 }
 .work-card h3 {
   font-size: 21px;
   margin: 20px 20px 8px;
   color: var(--black);
+  font-weight: 700;
+}
 }
 .work-card p {
   color: #555;
@@ -189,8 +212,10 @@ section h2 {
 .google-rating strong {
   display: block;
   color: var(--blue);
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 2px;
+  font-weight: 800;
+}
 }
 .google-rating span {
   display: block;
@@ -207,10 +232,12 @@ section h2 {
 }
 .review-card {
   background: #f5f7fa;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 28px;
+  border-radius: 14px;
   border: 1px solid #e2e2e2;
-  box-shadow: 0 4px 15px rgba(0,0,0,.05);
+  border-top: 4px solid var(--blue);
+  box-shadow: 0 6px 20px rgba(0,0,0,.07);
+}
 }
 .stars {
   color: var(--blue);
@@ -239,10 +266,12 @@ section h2 {
   margin-top: 35px;
 }
 .reason {
-  padding: 25px;
-  border-left: 4px solid var(--blue);
+  padding: 28px;
+  border-left: 5px solid var(--blue);
   background: #f8f8f8;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,.06);
+}
 }
 .reason h3 {
   margin-bottom: 8px;
@@ -254,6 +283,8 @@ section h2 {
   max-width: none;
   text-align: center;
   border-top: 5px solid var(--blue);
+  border-bottom: 5px solid var(--blue);
+}
 }
 .area p {
   font-size: 19px;
@@ -264,6 +295,8 @@ section h2 {
 .quote {
   text-align: center;
   background: var(--light-blue);
+  border-top: 5px solid var(--blue);
+}
 }
 .quote p {
   font-size: 20px;
@@ -278,7 +311,9 @@ footer {
 }
 footer h3 {
   color: var(--blue);
-  font-size: 24px;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
 }
 footer p {
   color: #aaa;
@@ -326,12 +361,16 @@ footer p {
 </header>
 <!-- HERO -->
 <div class="hero">
-  <h2>Professional Pressure Washing You Can Trust</h2>
+  <h2>Professional Pressure Washing for Your Home</h2>
   <p>
     <p>
-  Reliable pressure washing and exterior cleaning that makes your home
-  look cleaner, brighter and better maintained.
+  <p>
+  Restore the look of your home with professional pressure washing
+  and exterior cleaning from a local team you can trust.
 </p>
+
+<p class="hero-contact">Call or text us today for your free quote.</p>
+ 
   <div class="buttons">
     <a class="button" href="tel:7042734221">
       📞 GET YOUR FREE QUOTE
